@@ -16,15 +16,24 @@ class MainActivity : AppCompatActivity() {
         val resetButton = findViewById<Button>(R.id.resetButton)
         val plusButton = findViewById<Button>(R.id.plusButton)
 
+        // numberText 에 표현할 숫자 변수
+        var number = 0
+
         // 클릭 체킹
         // setOnClickListener = 클릭을 했을때 액션
         resetButton.setOnClickListener {
+            // number 리셋
+            number = 0
+            // number text 출력
+            numberTextView.text = number.toString()
             // 확인용 로그
-            Log.d("onclick", "리셋 버튼이 클릭 되었습니다.")
+            Log.d("onclick", "리셋 되었습니다. 숫자는 $number 입니다.")
         }
 
         plusButton.setOnClickListener {
-            Log.i("onclick", "플러스 버튼이 클릭 되었습니다.")
+            number += 1
+            numberTextView.text = number.toString()
+            Log.i("onclick", "+1 되었습니다. 숫자는 $number 입니다.")
         }
     }
 }
