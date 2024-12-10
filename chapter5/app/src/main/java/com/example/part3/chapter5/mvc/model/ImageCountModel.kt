@@ -1,4 +1,4 @@
-package com.example.part3.chapter5.mvc
+package com.example.part3.chapter5.mvc.model
 
 class ImageCountModel {
 

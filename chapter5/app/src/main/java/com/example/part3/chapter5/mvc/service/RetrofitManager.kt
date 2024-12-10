@@ -1,6 +1,5 @@
-package com.example.part3.chapter5.mvc.service.provider
+package com.example.part3.chapter5.mvc.service
 
-import com.example.part3.chapter5.ImageService
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.part3.chapter5.databinding.ActivityMainBinding
-import com.example.part3.chapter5.mvc.MvcActivity
+import com.example.part3.chapter5.mvc.controller.MvcActivity
 
 class MainActivity : AppCompatActivity() {
 

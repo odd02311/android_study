@@ -1,8 +1,7 @@
-package com.example.part3.chapter5.mvc.provider
+package com.example.part3.chapter5.mvc.service.provider
 
-import android.media.Image
-import com.example.part3.chapter5.ImageResponse
-import com.example.part3.chapter5.RetrofitManager
+import com.example.part3.chapter5.mvc.model.ImageResponse
+import com.example.part3.chapter5.mvc.service.RetrofitManager
 import retrofit2.Call
 import retrofit2.Response
 

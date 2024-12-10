@@ -1,4 +1,4 @@
-package com.example.part3.chapter5
+package com.example.part3.chapter5.mvc.service
 
 import com.example.part3.chapter5.mvc.model.ImageResponse
 import retrofit2.Call

@@ -1,11 +1,12 @@
-package com.example.part3.chapter5.mvc
+package com.example.part3.chapter5.mvc.controller
 
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
 import com.example.part3.chapter5.databinding.ActivityMvcBinding
-import com.example.part3.chapter5.mvc.provider.ImageProvider
+import com.example.part3.chapter5.mvc.model.ImageCountModel
+import com.example.part3.chapter5.mvc.service.provider.ImageProvider
 
 class MvcActivity : AppCompatActivity(), ImageProvider.Callback{
 
