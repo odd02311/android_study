@@ -28,6 +28,7 @@
                     android:value="" />
         </activity>
         <activity android:name="com.example.part3.chapter5.mvc.controller.MvcActivity"/>
+        <activity android:name="com.example.part3.chapter5.mvp.MvpActivity"/>
     </application>
 
 </manifest>
