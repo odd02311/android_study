@@ -2,10 +2,13 @@ package com.example.part3.chapter7
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.part3.chapter7.model.ContentEntity
 import com.example.part3.chapter7.repository.ContentRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
@@ -20,4 +23,15 @@ class MainViewModel @Inject constructor(
             scope = viewModelScope
         )
 
+    fun updateItem(item: ContentEntity){
+        viewModelScope.launch(Dispatchers.IO){
+            contentRepository.modify(item)
+        }
+    }
+
+    fun deleteItem(item: ContentEntity){
+        viewModelScope.launch(Dispatchers.IO){
+            contentRepository.delete(item)
+        }
+    }
 }
